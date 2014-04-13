@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="text/javascript" src="//sdk.spritzinc.com/jQuery/jquery-2.1.0.min.js"></script>
+	<title>Spritz JavaScript SDK Lesson 1</title>
+
+	<!--  We depend on jquery -->
+	
+	
+	<script type="text/javascript">
+		var SpritzSettings = {
+			clientId: "594a14554bb025c4a",
+			redirectUri: window.location.protocol + "//" + window.location.host,
+		};
+		
+	</script>
+	<link rel="stylesheet" href="spritz-shake.css">
+		<script type="text/javascript" src="/spritz-shake.min.js"></script>
+</head>
+
+<body>
+	
+	<p id="tilt">HELLO</p>
+	<div><a href="Example2.html">Next</a></div><br><br>	
+	
+	<h2>Lesson 1 - Embedded Spritzer Controller</h2>	
+	<br>
+	<p>
+		
+  	</p>
+  	<p>
+	  	This is the easiest way to use the Spritz SDK for JavaScript.  Simply load the JavaSscript 
+	  	into your page, initialize the client with your application ID, and define an element with data-role="spritzer" on your page.
+	  	You will get a redicle on your page that will Spritz the page that hosts it.
+  	</p>
+  	<h3>Supporting files to download for Example 1</h3>
+	<div>
+	<a href="Example1.html" download>Example1.html</a> (this file) 
+	<br>
+	<a href="login_success.html" download>login_success.html</a> (this is a required file to download and host on your website). 
+	<br>
+	<br>
+	In order for your login success file to work, please ensure that your redirectUri parameter points to the location of your login_success.html file and that you include the full protocol and path to this file.  For example your redirectUri setting should look something like: <br>
+	<br>
+	<code>
+	redirectUri: &quot;http://mysite.com/login_success.html&quot; 
+	</code>
+	<br>
+	<br>
+	Please also ensure that your callback uri matches the originating domain.  Make sure that if your website visitor is visiting www.mysite.com/somepage.html that your redirect uri includes www. and that if your visitor is coming from mysite.com/somepage.html that the redirect uri does not include www.
+	</div>
+</body>
+</html>
+
